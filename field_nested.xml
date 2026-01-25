@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Company name="Acme Corp" founded="1998">
+  <Headquarters>
+    <Address country="USA">
+      <Street>123 Innovation Way</Street>
+      <City>San Francisco</City>
+      <State>CA</State>
+      <Zip>94107</Zip>
+    </Address>
+  </Headquarters>
+  <Departments>
+    <Department id="ENG">
+      <Name>Engineering</Name>
+      <Manager employee_id="E001">
+        <FirstName>Ava</FirstName>
+        <LastName>Lee</LastName>
+        <Email>ava.lee@acme.example</Email>
+      </Manager>
+      <Team>
+        <Employee employee_id="E101" full_time="true">
+          <FirstName>Kai</FirstName>
+          <LastName>Ng</LastName>
+          <Role>Data Engineer</Role>
+        </Employee>
+        <Employee employee_id="E102" full_time="false">
+          <FirstName>Mina</FirstName>
+          <LastName>Patel</LastName>
+          <Role>ML Engineer</Role>
+        </Employee>
+      </Team>
+      <Projects>
+        <Project code="PX-001">
+          <Title>Streaming Ingestion</Title>
+          <Stack>Kafka, Spark, Snowflake</Stack>
+          <Tasks>
+            <Task id="T01">
+              <Name>Design schema registry</Name>
+              <Description>Define Avro/Protobuf contracts</Description>
+              <Status>Planned</Status>
+            </Task>
+            <Task id="T02">
+              <Name>Build ingestion jobs</Name>
+              <Description>Kafka Connect + Spark Structured Streaming</Description>
+              <Status>InProgress</Status>
+            </Task>
+            <Task id="T03">
+              <Name>Set up monitoring</Name>
+              <Description>Data quality and lag metrics</Description>
+              <Status>Blocked</Status>
+            </Task>
+          </Tasks>
+        </Project>
+      </Projects>
+    </Department>
+    <Department id="CON">
+      <Name>Construction Mgmt</Name>
+      <Manager employee_id="E002">
+        <FirstName>Noah</FirstName>
+        <LastName>Reddy</LastName>
+        <Email>noah.reddy@acme.example</Email>
+      </Manager>
+      <Projects>
+        <Project code="CM-101">
+          <Title>Site Upgrade</Title>
+          <Schedule unit="days">
+            <Planned>120</Planned>
+            <Actual>95</Actual>
+          </Schedule>
+        </Project>
+      </Projects>
+    </Department>
+  </Departments>
+</Company>
